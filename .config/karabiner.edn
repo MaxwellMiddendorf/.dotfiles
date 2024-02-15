@@ -1,0 +1,53 @@
+{
+
+
+:layers {
+    :extend {:key :caps_lock :alone {:key :escape}}
+    }
+
+
+:main [
+
+     {:des "extend-key shortcuts"                             
+     :rules [:extend
+
+	  ;; Vim Navigation
+            [:##h :left_arrow]
+            [:##j :down_arrow]
+            [:##k :up_arrow]
+            [:##l :right_arrow]
+            [:##u :home]
+	    [:##i :end]
+
+            ;; Home Row Modifers
+            [:##a :fn]
+            [:##s :left_control]
+            [:##d :left_shift]
+            [:##f :left_option]
+            [:##g :left_command]
+
+            ;; Other    
+            [:##semicolon :delete_or_backspace]
+            [:##spacebar :return_or_enter]
+            [:##return_or_enter :!Tbackslash]
+            [:##quote :delete_forward]
+
+            ;; Change Apps
+            [:##comma :!CStab]
+            [:##period :!Ctab]
+
+            ;; FN keys
+            [:##1 :f1]
+            [:##2 :f2]
+            [:##3 :f3]
+            [:##4 :f4]
+            [:##5 :f5]
+            [:##6 :f6]
+            [:##7 :f7]
+            [:##8 :f8]
+            [:##9 :f9]
+
+            ]
+     }
+     ]
+}
