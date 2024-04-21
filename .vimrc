@@ -76,6 +76,9 @@ set noexpandtab
 set backspace=indent,eol,start
 " Disable Welcome Message
 set shortmess=I
+" Change Backups
+set directory=$HOME/.vim/swapfiles//
+
 " Wordwrap on End of Words
 set linebreak
 " Ignore capital letters during search.
@@ -223,6 +226,7 @@ endif
 nmap <space> :
 " Remap Redo
 nmap U <C-r>
+nmap <leader>m :make<CR>
 "}}}
 "{{{ Auto-Complete Configurations
 "  ..............................................................................
@@ -258,6 +262,9 @@ autocmd Filetype python setlocal makeprg=python3\ %
 " Rust
 autocmd Filetype rust setlocal makeprg=cargo\ run\ %
 autocmd Filetype rust setlocal tabstop=4 softtabstop=4 shiftwidth=0 noexpandtab
+" LaTex
+autocmd FileType tex setlocal makeprg=pdflatex\ %
+
 
 "}}}
 "{{{ TODO

@@ -39,15 +39,23 @@ function sd() {
 	fi
 }
 
+function cd {
+    builtin cd "$@" && ls -GF
+}
+
 export -f sd
 
 function clear() {
 
 	printf "\33c\e[3J"
 }
+
 export -f clear
 
 set -o vi
 set show-mode-in-prompt on
 set vi-cmd-mode-string ":"
 set vi-ins-mode-string "+"
+alias cat='bat'
+alias ls='ls -GF'
+alias ..g='git rev-parse && cd "$(git rev-parse --show-cdup)"'

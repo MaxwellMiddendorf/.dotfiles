@@ -25,12 +25,12 @@
             [:##d :left_shift]
             [:##f :left_option]
             [:##g :left_command]
-
             ;; Other    
             [:##semicolon :delete_or_backspace]
             [:##spacebar :return_or_enter]
             [:##return_or_enter :!Tbackslash]
             [:##quote :delete_forward]
+            [:##p :application]
 
             ;; Change Apps
             [:##comma :!CStab]
