@@ -32,6 +32,12 @@
             [:##quote :delete_forward]
             [:##p :application]
 
+            ;; Copy and Paste
+            [:##x :!Cx]
+            [:##c :!Cc]
+            [:##v :!Cv]
+
+
             ;; Change Apps
             [:##comma :!CStab]
             [:##period :!Ctab]
