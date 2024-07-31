@@ -124,6 +124,8 @@ highlight VertSplit ctermfg=Black
 " Buffer Tabs Configurations
 let g:buftabline_show=1
 let g:buftabline_indicators=1
+set virtualedit+=onemore
+
 
 "}}}
 "{{{ Navigation
