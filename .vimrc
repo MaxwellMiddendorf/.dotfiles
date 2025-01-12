@@ -246,29 +246,6 @@ inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
 "Accept Completion
 inoremap <silent><expr> <c-@> coc#refresh() 
 ""}}}
-"{{{ Language Configurations
-" C
-autocmd Filetype c setlocal makeprg=gcc\ %\ -o\ %<
-" C++
-autocmd Filetype cpp setlocal makeprg=g++\ %\ -o\ %<
-" COBAL
-autocmd Filetype cobal setlocal makeprg=cobc\ -xj\ %\
-" Java
-autocmd Filetype java setlocal makeprg=java\ %
-" Javascript
-autocmd Filetype javascript setlocal makeprg=bun\ %
-" Typescript
-autocmd Filetype typescript setlocal makeprg=bun\ %
-" Python
-autocmd Filetype python setlocal makeprg=python3\ %
-" Rust
-autocmd Filetype rust setlocal makeprg=cargo\ run\ %
-autocmd Filetype rust setlocal tabstop=4 softtabstop=4 shiftwidth=0 noexpandtab
-" LaTex
-autocmd FileType tex setlocal makeprg=pdflatex\ %
-
-
-"}}}
 "{{{ TODO
 
 " 	- Map Chat Gpt commands / comment prompts / copilot

@@ -1,0 +1,28 @@
+
+ ;; Configuration
+(defcfg
+
+)
+
+;; Behaviors for aliases
+(defalias
+	extend (tap-hold-press 200 200 esc (layer-toggle extend))
+)
+
+;; Keys to be replaced
+(defsrc
+	caps a s d f g h j k l ; '
+			spc
+)
+
+(deflayer default
+	@extend _ _ _ _ _ _ _ _ _ _ _
+			_
+)
+
+;; Layers
+(deflayer extend
+	_ _ lmet lsft lctl _ left down up right bspc del
+			ret
+)
+
